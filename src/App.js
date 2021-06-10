@@ -42,7 +42,8 @@ const MainContainer = styled.div`
 
 const SubContainer = styled.div`
   border: 3px solid black;
-  border-radius: 1rem;
+  border-top-right-radius: 1rem;
+  border-bottom-right-radius: 1rem;
   width: 90%;
   height: 60%;
   display: flex;
