@@ -1,3 +1,7 @@
+* {
+  font-family: 'Roboto', sans-serif;
+}
+
 .App {
   text-align: center;
   background-color: white;
@@ -41,7 +45,9 @@
 }
 
 button {
+  font-family: 'Jua', sans-serif;
   background-color: white;
   border: 1.5px solid black;
   padding: 0.5rem;
+  font-size: 15px;
 }

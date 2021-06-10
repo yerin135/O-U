@@ -28,6 +28,7 @@ const OurDiary = styled.div`
   padding: 2rem 8rem;
   margin: 7rem 12rem 15rem;
   display: flex;
+  font-family: 'Roboto', sans-serif;
 `
 
 const MainContainer = styled.div`
