@@ -1,27 +1,37 @@
 import logo from './logo.svg';
-import './App.css';
 import styled from '@emotion/styled';
 
 function App() {
   return (
     <MainContainer>
-      {/* <img src={logo} alt="logo" className="App"></img> */}
       <SubContainer>
         <OurDiary>
           OUR DIARY
         </OurDiary>
         <ButtonContainer>
-          <button>일기쓰기
-          </button>
-          <button>달력보기
-          </button>
-          <button>설정
-          </button>
+          <Button>
+            일기쓰기
+          </Button>
+          <Button>
+            달력보기
+          </Button>
+          <Button>
+            설정
+          </Button>
         </ButtonContainer>
       </SubContainer>
     </MainContainer>
   );
 }
+
+const Button = styled.button`
+  font-family: 'Jua', sans-serif;
+  width: 200px;
+  background-color: white;
+  border: 1.5px solid black;
+  padding: 0.5rem;
+  font-size: 15px;
+`;
 
 const OurDiary = styled.div`
   border: 2.5px solid black;
@@ -84,5 +94,3 @@ const ButtonContainer = styled.div`
 `;
 
 export default App;
-
-
