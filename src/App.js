@@ -24,31 +24,37 @@ function App() {
 }
 
 const OurDiary = styled.div`
-  border: 2.5px solid black;  
-  padding: 2rem 8rem;
-  margin: 7rem 12rem 15rem;
-  display: flex;
+  border: 2.5px solid black;
+  width: min(100% - 2rem, 20rem);
+  padding: 2rem 0;
+  text-align: center;
   font-family: 'Roboto', sans-serif;
-`
+  font-size: 1.25rem;
+`;
 
 const MainContainer = styled.div`
-  
-  width: 100%;
-  height: 80%;
-  text-align: center;
-  flex-direction: row;
+  height: 100vh;
   padding: 3rem;
-`
+  
+  // 엘리먼트 크기가 마음대로 안 될 때는 border-box 적용하기~
+  box-sizing: border-box;
+
+  display: flex;
+  flex-direction: column;
+`;
 
 const SubContainer = styled.div`
   border: 3px solid black;
   border-top-right-radius: 1rem;
   border-bottom-right-radius: 1rem;
-  width: 90%;
-  height: 60%;
+  padding: 7rem 0 0;
+  flex: 1;
+
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: space-between;
+
   position: relative;
   ::before {
     content: "";
@@ -62,14 +68,20 @@ const SubContainer = styled.div`
     background: center / contain no-repeat url(${logo}), white;
   }
 
-`
+`;
 
 const ButtonContainer = styled.div`
   display: flex;
+  width: min(100%, 60rem);
+  align-items: center;
   justify-content: space-evenly;
-  width: 100%;
   padding: 2rem 1rem;
-`
+  row-gap: 0.5rem;
+
+  @media screen and (max-width: 768px) {
+    flex-direction: column;
+  }
+`;
 
 export default App;
 
