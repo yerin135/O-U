@@ -1,1 +1,1 @@
-export default () => 'calender';
+export default () => 'calenders';
