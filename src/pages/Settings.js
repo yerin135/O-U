@@ -1,7 +1,7 @@
 import styled from '@emotion/styled';
 import { Button, ButtonContainer, OurDiary, MainContainer, SubContainer, } from '../pages/Component';
 import { Link } from 'react-router-dom';
-import Popup from 'reactjs-popup';
+import Modal from 'react-modal';
 
 const Settings = () => (
     <MainContainer>
@@ -24,5 +24,11 @@ const Settings = () => (
         </SubContainer>
     </MainContainer>
 );
+
+const SettingModal = {
+    content : {
+        
+    }
+};
 
 export default Settings;

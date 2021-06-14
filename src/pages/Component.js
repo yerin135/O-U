@@ -55,7 +55,6 @@ position: relative;
   left: 0;
   background: center / contain no-repeat url(${logo}), white;
 }
-
 `;
 
 const ButtonContainer = styled.div`
@@ -69,6 +68,17 @@ row-gap: 0.5rem;
 @media screen and (max-width: 768px) {
   flex-direction: column;
 }
+
 `;
 
-export { Button, ButtonContainer, OurDiary, MainContainer, SubContainer, };
+const Diary = styled.div`
+  border: 2.5px solid black;
+  width: min(100% - 2rem, 20rem);
+  padding: 2rem 0;
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.25rem;
+`;
+
+
+export { Button, ButtonContainer, OurDiary, MainContainer, SubContainer, Diary };
