@@ -6,6 +6,7 @@ font-family: 'Jua', sans-serif;
 width: 200px;
 background-color: white;
 border: 1.5px solid black;
+border-radius: 0.5rem;
 padding: 0.5rem;
 font-size: 1.1rem;
 cursor: pointer;
