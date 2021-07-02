@@ -1,11 +1,12 @@
 import { Link } from 'react-router-dom';
 import styled from '@emotion/styled';
 import logo from '../assets/logo.svg';
-import { Button, ButtonContainer, OurDiary, MainContainer, SubContainer, } from '../pages/Component';
+import { Button, ButtonContainer, OurDiary, MainContainer } from '../components/Component';
+import SpringNote from '../components/SpringNote';
 
 const Main = () => (
 	<MainContainer>
-    <SubContainer>
+    <SpringNote>
       <OurDiary>
         OUR DIARY
       </OurDiary>
@@ -26,7 +27,7 @@ const Main = () => (
           </Button>
         </Link>
       </ButtonContainer>
-    </SubContainer>
+    </SpringNote>
 	</MainContainer>
 );
 

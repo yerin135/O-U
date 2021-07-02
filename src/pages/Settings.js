@@ -1,11 +1,12 @@
 import styled from '@emotion/styled';
-import { Button, ButtonContainer, OurDiary, MainContainer, SubContainer, } from '../pages/Component';
 import { Link } from 'react-router-dom';
 import Modal from 'react-modal';
+import { Button, ButtonContainer, OurDiary, MainContainer } from '../components/Component';
+import SpringNote from '../components/SpringNote';
 
 const Settings = () => (
     <MainContainer>
-        <SubContainer>
+        <SpringNote>
             <OurDiary>
                 Settings
             </OurDiary>
@@ -21,7 +22,7 @@ const Settings = () => (
             </Button>
             </Link>
         </ButtonContainer>
-        </SubContainer>
+        </SpringNote>
     </MainContainer>
 );
 

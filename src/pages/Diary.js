@@ -1,7 +1,7 @@
-import { Button, MainContainer, SubContainer } from '../pages/Component';
 import { Link } from 'react-router-dom';
 import styled from '@emotion/styled';
-
+import { Button, MainContainer } from '../components/Component';
+import SpringNote from '../components/SpringNote';
 
 const Diary = () => (
     <MainContainer>
